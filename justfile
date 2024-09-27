@@ -1,7 +1,7 @@
 fuzz-toolchain := if `arch` == "arm64" { "+nightly-2023-04-01-x86_64-apple-darwin" } else { "+nightly-2023-04-01" }
 
 build:
-    cargo build-sbf --features enable-gpl
+    cargo build-sbf --features enable-gpl --tools-version v1.40
 
 lint:
     cargo clippy --no-deps --tests --features enable-gpl --features test-bpf -- --allow=clippy::result-large-err
