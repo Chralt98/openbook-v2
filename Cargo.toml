@@ -3,6 +3,7 @@ members = [
   "lib/client",
   "programs/*",
 ]
+resolver = "2"
 
 [workspace.dependencies]
 anchor-client = "0.30.1"
